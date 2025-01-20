@@ -11,10 +11,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class LiteraluraApplication implements CommandLineRunner {
 
 	@Autowired
-	private Principal principal; // Injeção gerenciada pelo Spring
+	private Principal principal; 
 
 	public static void main(String[] args) {
-		// Inicializa o contexto da aplicação
+		
 		SpringApplication.run(LiteraluraApplication.class, args);
 	}
 
@@ -36,7 +36,7 @@ public class LiteraluraApplication implements CommandLineRunner {
 		System.setProperty("DB_USER", dbUser);
 		System.setProperty("DB_PASSWORD", dbPassword);
 
-		// Exibir o menu principal
+		
 		principal.exibeMenu();
 	}
 }
